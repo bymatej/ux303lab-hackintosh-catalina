@@ -121,6 +121,13 @@ Connect your Android to a WiFi network or to mobile network. Install `HoRNDIS-9.
  
  Download: https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/
 
+## What works and what doesn't?
+Everything works except: 
+- WiFi (you can make it work if you swap out the WiFi card)
+- TouchPad (probably patchable, but so far I had no luck with it)
+
+Everything else works fine so far. I did not test HDMI. External and internal microphone works. GarageBand works flawlessly with my iRig 2. Keyboard works nice.
+
 ## Credit
 I am not an author of any of this. I just gathered all the information on one place for my own reference and I might help somebody else out too.
 All credit goes to: 

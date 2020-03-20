@@ -10,6 +10,8 @@ Do this at your own risk. If you mess something up - it is your fault. I will pr
 Computer running Mac OS Catalina. Legit Mac/MacBook or Hackintosh.
 You can find VMWare and VirtualBox images for Hackintos Catalina on the web. I had a legit MacBook Pro for this. You need it to be able to download the Catalina installation.
 
+And, of course, you need Asus Zenbook UX303LAB. I am not sure this will work with other UX303 models. You can give it a try if you want.
+
 ## Sources
 ### Must-reads **before doing anything** (must read!!!)
 - Instructions for my Zenbook, but for Mac OS El Capitan: https://www.tonymacx86.com/threads/guide-asus-zenbook-ux303la-broadwell-edition.172279/

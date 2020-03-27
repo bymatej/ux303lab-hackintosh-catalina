@@ -1,3 +1,5 @@
+DD image is in matejs_files folder on private hosting.
+
 https://www.cyberciti.biz/faq/how-to-create-disk-image-on-mac-os-x-with-dd-command/
 
 1M used for el capitan

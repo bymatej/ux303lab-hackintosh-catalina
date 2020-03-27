@@ -1,0 +1,15 @@
+https://www.cyberciti.biz/faq/how-to-create-disk-image-on-mac-os-x-with-dd-command/
+
+1M used for el capitan
+default (512b) used for catalina
+
+--------
+Commands: 
+
+diskutil list
+
+diskutil unmountDisk /dev/disk2
+
+sudo dd if=/dev/disk2 of=bootable_osx_10.15.img.img.dd
+
+file bootable_osx_10.15.img.dd

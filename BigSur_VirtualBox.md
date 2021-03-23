@@ -1,4 +1,4 @@
-# Big Sur on VirtualBox inside Ubuntu Desktop 20.04
+# Big Sur guest on VirtualBox inside Ubuntu Desktop 20.04 host
 
 ## Prerequisites
 ### VirtualBox
@@ -174,6 +174,12 @@ THIS COULD HAVE EASILY BE DONE BEFORE THE INITIAL VM SETUP. MOVE ABOVE AFTER TES
 - https://github.com/myspaghetti/macos-virtualbox
 - https://stackoverflow.com/questions/47965875/cannot-connect-to-apple-id-using-virtual-box-mac-os-high-sierra
 Sign in to apple ID only AFTER the fix is successfully applied.
+
+## Fix graphics (only 7mb video memory in guest os)
+### Download ISO cd and mount it
+
+### Source:
+- https://gist.github.com/pjobson/11d1630d426b1b3ea318e9902db0227c
 
 ## Guest Additions for VirtualBox?
 - Not sure if needed, but: https://forums.virtualbox.org/viewtopic.php?f=22&t=100837

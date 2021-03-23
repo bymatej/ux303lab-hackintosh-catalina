@@ -204,5 +204,13 @@ P.s. disable sleep in power options. It crashes the VM sometimes.
 ### Source:
 - https://gist.github.com/pjobson/11d1630d426b1b3ea318e9902db0227c
 
+## Fix resolution after fixing the video memory
+### Apply fix: 
+- Download VMWare preference pane: 
+- Set the resolution in settings or using this in terminal: `/Library/Application Support/VMware Tools/vmware-resolutionSet <width> <height>`
+
+### Source:
+- https://github.com/MarLoe/VMware.PreferencePane
+
 ## Guest Additions for VirtualBox?
 - Not sure if needed, but: https://forums.virtualbox.org/viewtopic.php?f=22&t=100837

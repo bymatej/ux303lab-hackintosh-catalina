@@ -176,7 +176,30 @@ THIS COULD HAVE EASILY BE DONE BEFORE THE INITIAL VM SETUP. MOVE ABOVE AFTER TES
 Sign in to apple ID only AFTER the fix is successfully applied.
 
 ## Fix graphics (only 7mb video memory in guest os)
-### Download ISO cd and mount it
+### Apply fix
+- Shut down the VM
+- Download ISO cd and mount it in optical drive: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/vm_tools.iso
+- Execute this in terminal: 
+```
+vboxmanage modifyvm macOS --vram 256 --graphicscontroller vmsvga
+```
+- Start the VM and launch the Terminal in the VM (in Mac OS)
+- Execute the following commands:
+```
+sudo spctl --master-disable
+```
+
+```
+sudo spctl --status
+```
+- The last command should return `assessments disabled`
+- Close Terminal
+- Open System Preferences, click on the little lock icon in the bottom left corner, and allow apps downloaded from Anywhere
+- Open the mounted optical disk, run it and install (allow everything when prompted)
+- Reboot
+- Respond to all prompts and allow everything
+
+P.s. disable sleep in power options. It crashes the VM sometimes.
 
 ### Source:
 - https://gist.github.com/pjobson/11d1630d426b1b3ea318e9902db0227c

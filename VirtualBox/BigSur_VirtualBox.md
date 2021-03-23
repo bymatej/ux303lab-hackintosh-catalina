@@ -181,7 +181,7 @@ Sign in to apple ID only AFTER the fix is successfully applied.
 - Download ISO cd and mount it in optical drive: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/vm_tools.iso
 - Execute this in terminal: 
 ```
-vboxmanage modifyvm macOS --vram 256 --graphicscontroller vmsvga
+vboxmanage modifyvm "Mac OS" --vram 256 --graphicscontroller vmsvga
 ```
 - Start the VM and launch the Terminal in the VM (in Mac OS)
 - Execute the following commands:

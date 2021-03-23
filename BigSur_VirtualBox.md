@@ -124,6 +124,7 @@ vboxmanage setextradata "Mac OS" "VBoxInternal2/EfiGraphicsResolution" "1920x108
 
 ## Fix Apple ID
 ### Generate serial number, board id and other crucial information
+- Shut down the VM if it's running
 - Clone this repo: https://github.com/sickcodes/osx-serial-generator
 - Install the dependencies (check readme in repo)
 - Run command to generate (in my case: `./generate-unique-machine-values.sh -c 1 --model="iMac11,3"`)

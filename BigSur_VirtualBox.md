@@ -126,6 +126,7 @@ vboxmanage setextradata "Mac OS" "VBoxInternal2/EfiGraphicsResolution" "1920x108
 - https://www.reddit.com/r/virtualbox/comments/cbr6ig/virtualbox_apple_id_difficulties_running_macos/
 - https://github.com/myspaghetti/macos-virtualbox
 - https://stackoverflow.com/questions/47965875/cannot-connect-to-apple-id-using-virtual-box-mac-os-high-sierra
+Sign in to apple ID only AFTER the fix is successfully applied.
 
 ## Guest Additions for VirtualBox?
 - Not sure if needed, but: https://forums.virtualbox.org/viewtopic.php?f=22&t=100837

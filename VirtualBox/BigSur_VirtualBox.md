@@ -206,7 +206,8 @@ P.s. disable sleep in power options. It crashes the VM sometimes.
 
 ## Fix resolution after fixing the video memory
 ### Apply fix: 
-- Download VMWare preference pane: 
+- Boot into the VM
+- Download VMWare preference pane: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/VMware.prefPane.pkg
 - Set the resolution in settings or using this in terminal: `/Library/Application Support/VMware Tools/vmware-resolutionSet <width> <height>`
 
 ### Source:

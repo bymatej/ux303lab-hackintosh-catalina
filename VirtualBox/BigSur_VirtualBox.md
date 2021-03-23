@@ -175,6 +175,10 @@ THIS COULD HAVE EASILY BE DONE BEFORE THE INITIAL VM SETUP. MOVE ABOVE AFTER TES
 - https://stackoverflow.com/questions/47965875/cannot-connect-to-apple-id-using-virtual-box-mac-os-high-sierra
 Sign in to apple ID only AFTER the fix is successfully applied.
 
+## Fix iCloud
+### Source:
+- https://www.youtube.com/watch?v=IYismHReQ8A
+
 ## Fix graphics (only 7mb video memory in guest os)
 ### Apply fix
 - Shut down the VM

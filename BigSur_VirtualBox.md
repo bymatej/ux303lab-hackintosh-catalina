@@ -123,6 +123,52 @@ vboxmanage setextradata "Mac OS" "VBoxInternal2/EfiGraphicsResolution" "1920x108
 - https://github.com/hkdb/VBoxMacSetup
 
 ## Fix Apple ID
+### Generate serial number, board id and other crucial information
+- Clone this repo: https://github.com/sickcodes/osx-serial-generator
+- Install the dependencies (check readme in repo)
+- Run command to generate (in my case: `./generate-unique-machine-values.sh -c 1 --model="iMac11,3"`)
+- Add generated information to VirtualBox
+```
+vboxmanage modifyvm "Mac OS" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac11,3"
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" "YOUR_GENERATED_SERIAL_NUMBER"
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "YOUR_GENERATED_BOARD_SERIAL_NUMBER"
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/efi/0/Config/DmiSystemUuid" "YOUR_GENERATED_SYSTEM_UUID"
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" "1.0"
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 0
+```
+
+```
+vboxmanage setextradata "Mac OS" "VBoxInternal2/EfiGraphicsResolution" "1920x1080"
+```
+
+Apply all of the config specified above! 
+THIS COULD HAVE EASILY BE DONE BEFORE THE INITIAL VM SETUP. MOVE ABOVE AFTER TESTING!!
+
+### Source:
+- https://github.com/sickcodes/osx-serial-generator
 - https://www.reddit.com/r/virtualbox/comments/cbr6ig/virtualbox_apple_id_difficulties_running_macos/
 - https://github.com/myspaghetti/macos-virtualbox
 - https://stackoverflow.com/questions/47965875/cannot-connect-to-apple-id-using-virtual-box-mac-os-high-sierra

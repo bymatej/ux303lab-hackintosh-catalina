@@ -153,7 +153,7 @@ The goal is to bump it higher!
 - Download ISO cd and mount it in optical drive: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/vm_tools.iso
 - Execute this in terminal (on your Linux Host OS): 
 ```
-vboxmanage modifyvm "macOS" --vram 256 --graphicscontroller vmsvga
+vboxmanage modifyvm "macOS" --vram 128 --graphicscontroller vmsvga
 ```
 - Start the VM and launch the Terminal in the VM (in Mac OS)
 - Execute the following commands:
@@ -190,7 +190,22 @@ Notice that the Audio does not work inside your VM.
 
 We will load two kexts. These two worked for me. If they don't work for you, then you need to do more research on your hardware.
 
-- Download Clover Configurator: 
+- Download kexts in zip: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/kexts_audio.zip
+- Extract the zip to get kexts
+- Copy them to `/Library/Extensions/`
+- Reboot
+
+Note: You can download the latest version of the Vodoo kext from the official repo: https://sourceforge.net/projects/voodoohda/
+
+Your audio will hopefully work now!
+
+# Improve performance
+- Download beamoff on your host machine: 
+- Mount the iso in the virtual optical drive on VM
+- Boot your VM
+- Open the mounted disk on the guest machine and run beamoff file
+
+Your performance might be increased now.
 
 # Tips
 - Disable sleep in power options. It crashes the VM sometimes.

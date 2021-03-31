@@ -134,7 +134,20 @@ After that - you're done! You have a fully working Mac OS Catalina. Now le's upg
 - Download it
 - Do NOT run the Big Sur upgrade yet!
 - Power down your VM.
-- Go to VM settings and: 
+- Go to VM settings in VirtualBox and: 
   -- disable network (go to network, and untick all adapters)
   -- change USB settings to USB 1.1 (go to USB in settings and set USB 1.1)
 - Power on your VM and run the upgrade
+- Wait for the upgrade to finish, and when it's finished, power down the VM and change back the above-mentioned settings (enable network back, and use USB 3.0)
+- Boot back your VM again and you have Big Sur
+
+# Fixing the Graphics
+Notice you have only 7 MB of memory when you click on About My Mac (or even less) despite the 128 MB in the VirtualBox settings.
+The goal is to bump it higher!
+
+TBD
+
+# Fixing the Audio
+Notice that the Audio does not work inside your VM.
+
+TBD

@@ -147,9 +147,45 @@ After that - you're done! You have a fully working Mac OS Catalina. Now le's upg
 Notice you have only 7 MB of memory when you click on About My Mac (or even less) despite the 128 MB in the VirtualBox settings.
 The goal is to bump it higher!
 
-TBD
+## Fix graphics (only 7mb video memory in guest os)
+### Apply fix
+- Shut down the VM
+- Download ISO cd and mount it in optical drive: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/vm_tools.iso
+- Execute this in terminal (on your Linux Host OS): 
+```
+vboxmanage modifyvm "Mac OS" --vram 256 --graphicscontroller vmsvga
+```
+- Start the VM and launch the Terminal in the VM (in Mac OS)
+- Execute the following commands:
+```
+sudo spctl --master-disable
+```
+
+```
+sudo spctl --status
+```
+
+- The last command should return `assessments disabled`
+- Close Terminal
+- Open System Preferences, click on the little lock icon in the bottom left corner, and allow apps downloaded from Anywhere
+- Open the mounted optical disk, run it and install (allow everything when prompted)
+- Reboot
+- Respond to all prompts and allow everything
+
+### Source:
+- https://gist.github.com/pjobson/11d1630d426b1b3ea318e9902db0227c
+
+## Fix resolution after fixing the video memory
+### Apply fix: 
+- Boot into the VM
+- Download VMWare preference pane: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/VMware.prefPane.pkg
+- Set the resolution in settings or using this in terminal: `/Library/Application Support/VMware Tools/vmware-resolutionSet <width> <height>`
 
 # Fixing the Audio
 Notice that the Audio does not work inside your VM.
 
 TBD
+
+# Tips
+- Disable sleep in power options. It crashes the VM sometimes.
+- 

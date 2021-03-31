@@ -153,7 +153,7 @@ The goal is to bump it higher!
 - Download ISO cd and mount it in optical drive: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/vm_tools.iso
 - Execute this in terminal (on your Linux Host OS): 
 ```
-vboxmanage modifyvm "Mac OS" --vram 256 --graphicscontroller vmsvga
+vboxmanage modifyvm "macOS" --vram 256 --graphicscontroller vmsvga
 ```
 - Start the VM and launch the Terminal in the VM (in Mac OS)
 - Execute the following commands:

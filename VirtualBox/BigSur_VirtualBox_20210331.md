@@ -179,7 +179,8 @@ sudo spctl --status
 ### Apply fix: 
 - Boot into the VM
 - Download VMWare preference pane: https://github.com/bymatej/ux303lab-hackintosh-catalina/raw/master/VirtualBox/VMware.prefPane.pkg
-- Set the resolution in settings or using this in terminal: `/Library/Application Support/VMware Tools/vmware-resolutionSet <width> <height>`
+- Install it
+- Set the resolution in settings (you will see a new entry in System Preferences) or by executing this in Mac terminal: `cd /Library/Application Support/VMware Tools && ./vmware-resolutionSet <width> <height>` where width and height are numbers like 1920 and 1080
 
 # Fixing the Audio
 Notice that the Audio does not work inside your VM.

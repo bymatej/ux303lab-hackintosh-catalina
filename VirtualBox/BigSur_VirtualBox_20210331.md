@@ -21,7 +21,9 @@ I used this to install Mac OS Big Sur as a Guest OS inside VirtualBox on my Linu
 
 Everything I describe below can be found in the ReadMe files of the above-mentioned GitHub repositories. Read the ReadMe if you get stuck, or want to know more!
 
-# Installation steps
+Basically, I installed Catalina, then upgraded to Big Sur.
+
+# Installation steps (Catalina installation)
 ## Clone the `macos-virtualbox` repo from git
 - Open the terminal and type `git clone https://github.com/myspaghetti/macos-virtualbox.git`
 - Read the ReadMe and install all the dependencies

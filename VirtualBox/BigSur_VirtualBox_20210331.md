@@ -185,7 +185,9 @@ sudo spctl --status
 # Fixing the Audio
 Notice that the Audio does not work inside your VM.
 
-TBD
+We will load two kexts. These two worked for me. If they don't work for you, then you need to do more research on your hardware.
+
+- Download Clover Configurator: 
 
 # Tips
 - Disable sleep in power options. It crashes the VM sometimes.
